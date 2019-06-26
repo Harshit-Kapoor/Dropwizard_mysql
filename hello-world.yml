@@ -1,0 +1,17 @@
+template: Hello, %s!
+
+defaultName: Stranger
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 6060
+  adminConnectors:
+    - type: http
+      port: 6061
+
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  user: root
+  password: root
+  url: jdbc:mysql://localhost:3306/mydatabase
